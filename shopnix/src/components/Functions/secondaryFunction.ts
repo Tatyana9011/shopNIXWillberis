@@ -1,4 +1,3 @@
-import { React } from 'react';
 import { LoginFormType } from './../../store/types';
 import { IGood } from './../../models/IGood';
 export const convertToPrice = (price:string) => {
@@ -11,7 +10,7 @@ export const totalPriceItems = (order:any) => {
   return (order.price + priceTopping) * order.count; */
 };
 type SetMessageType = (payload:string)=>void
-type ValidateFormDataType = (formData: LoginFormType, setMessage: SetMessageType, user: string | null) =>void
+type ValidateFormDataType = (formData: LoginFormType, setMessage: SetMessageType, user: string | null) =>boolean | undefined
 
 export const validateFormData:ValidateFormDataType = (formData, setMessage, user) => {
   if (formData.email && formData.pass && formData.pass2 && formData.login) {
@@ -53,17 +52,35 @@ export const countGoodsCart = (data:IGood[], id:string) => {
   return count;
 }
 
-export function saveDataJSON(name:string, data:any) {
-  localStorage.setItem(name, JSON.stringify(data));
+export function saveDataJSON(key: string, value: any) {
+  try {
+      window.localStorage.setItem(key, JSON.stringify(value))
+      // We dispatch a custom event so every useLocalStorage hook are notified
+      window.dispatchEvent(new Event('local-storage'))
+    } catch (error) {
+      console.warn(`Error setting localStorage key “${key}”:`, error)
+    }
+ // localStorage.setItem(key, JSON.stringify(data));
 }
 
-export function getDataStorage(name: string) {
-  const getStore:JSON = localStorage.getItem(name)
-  return JSON.parse(getStore);
+export function getDataStorage<T>(key: string) {
+  try {
+      const item = window.localStorage.getItem(key)
+      return parseJSON(item) as T
+    } catch (error) {
+      console.warn(`Error reading localStorage key “${key}”:`, error)
+    }
+/*   const getStore:JSON = localStorage.getItem(name)
+  return JSON.parse(getStore); */
 }
 
-export function removeDataStorage(name:string) {
-  localStorage.removeItem(name);
+export function removeDataStorage(key: string) {
+  try {
+    window.localStorage.removeItem(key);
+  } catch (error) {
+    console.warn(`Error removeItem localStorage: `, error)
+  }
+  
 }
 
 export function examinationDataStorage() {
@@ -74,4 +91,13 @@ export function examinationDataStorage() {
     return false;
   }
   return true;
+}
+
+function parseJSON<T>(value: string | null): T | undefined {
+  try {
+    return value === 'undefined' ? undefined : JSON.parse(value ?? '')
+  } catch (error) {
+    console.log('parsing error on', { value })
+    return undefined
+  }
 }

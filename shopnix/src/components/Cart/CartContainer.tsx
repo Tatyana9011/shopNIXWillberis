@@ -28,7 +28,13 @@ const CartContainer:React.FC<PropsType> = (props) => {
   const totalPrice: number = props.dataCartGoods.reduce((sum, item) => {
     return sum + parseInt(item.price);
   }, 0);
+    
 
+  const escapeHandler=(event: React.KeyboardEvent)=> {
+    if (event.code === 'Escape') {
+      props.hideModal();
+    }
+  }
   const closeModal = (event:any) => {
     if (!event.target.closest(`.${s.modal}`)) {
       props.hideModal();
@@ -36,7 +42,7 @@ const CartContainer:React.FC<PropsType> = (props) => {
   };
 
   return (
-    <div onClick={closeModal} className={`${s.overlay} ${props.showCart ? s.show : ''}`}>
+    <div onClick={closeModal} onKeyPress={escapeHandler} className={`${s.overlay} ${props.showCart ? s.show : ''}`}>
       <Cart
         increment ={props.increment}
         decrement={props.decrement}

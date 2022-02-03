@@ -30,7 +30,6 @@ class App extends React.Component <MyPropsType&RouteComponentProps>{
   constructor(props: MyPropsType&RouteComponentProps) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
-    this.escapeHandler = this.escapeHandler.bind(this);
   }
 
   handleScroll() {
@@ -40,11 +39,6 @@ class App extends React.Component <MyPropsType&RouteComponentProps>{
       this.props.hideBtn();
     }
   }
-  escapeHandler(this:any, event: React.KeyboardEvent) {
-    if (event.code === 'Escape') {
-      this.props.hideModal();
-    }
-  }
 
   catchAllUnhandledErrors = (e: PromiseRejectionEvent) => {
     console.log("catchAllUnhandledErrors ....some error occured");
@@ -52,8 +46,8 @@ class App extends React.Component <MyPropsType&RouteComponentProps>{
   }
 
   componentDidMount() {
-    const pass:string = getDataStorage('pass');
-    const login:string = getDataStorage('login');
+    const pass:string | undefined = getDataStorage('pass');
+    const login:string | undefined = getDataStorage('login');
     if (pass && login) {
       this.props.loginThunkCreator(login, pass);
     } else {
@@ -68,13 +62,10 @@ class App extends React.Component <MyPropsType&RouteComponentProps>{
     }
 
     window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
-    window.addEventListener('keypress', this.escapeHandler);
     window.addEventListener('scroll', this.handleScroll);
   }
 
-  /*  делаем отписку от прослушивания псле того как компонента умерла */
   componentWillUnmount() {
-    window.removeEventListener('keypress', this.escapeHandler.bind);
     window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
   }
 

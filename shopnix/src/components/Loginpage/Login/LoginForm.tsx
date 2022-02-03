@@ -23,9 +23,7 @@ type OwenPropsType = {
   setStateEditMode: () => void
 }
 
-type PropsType = OwenPropsType & InjectedFormProps<LoginFormType>
-
-const LoginForm:React.FC<PropsType> = ({ handleSubmit, setStateEditMode,
+const LoginForm:React.FC<InjectedFormProps<LoginFormType, OwenPropsType> & OwenPropsType> = ({ handleSubmit, setStateEditMode,
   message, errorStyle,  loginIn, editMode,  setLoginIn, 
   removeUserData, setFilterGoodsData, setValueGoodsData }) => {
 

@@ -11,7 +11,34 @@ import { useAppDispatch } from '../../../hook/redux';
 import { setFilterGoodsData, setValueGoodsData } from "../../../store/reducers/GoodsSlice";
 SwiperCore.use([Navigation]);
 
-function SwiperSlideComponent():React.FC {
+
+interface SwipeOptions {
+    startSlide?: number | undefined;
+    speed?: number | undefined;
+    auto?: number | undefined;
+    continuous?: boolean | undefined;
+    disableScroll?: boolean | undefined;
+    stopPropagation?: boolean | undefined;
+    callback?: ((index: number, elem: HTMLElement) => void) | undefined;
+    transitionEnd?: ((index: number, elem: HTMLElement) => void) | undefined;
+}
+
+interface Style {
+        container: React.CSSProperties;
+        wrapper: React.CSSProperties;
+        child: React.CSSProperties;
+}
+    
+interface SwiperPropsInterface {
+    children?: React.ReactNode;
+    id?: string | undefined;
+    swipeOptions?: SwipeOptions | undefined;
+    childCount?: number | undefined;
+    style?: Style | undefined;
+    className?: string | undefined;
+}
+
+const SwiperSlideComponent: React.FC<SwiperPropsInterface>=()=> {
   const dispatch = useAppDispatch();
   const slides = [];
 
@@ -19,14 +46,6 @@ function SwiperSlideComponent():React.FC {
      dispatch(setFilterGoodsData(filter))
      dispatch(setValueGoodsData(values))
   }
-  /* const swiperParams: SwiperOptions = {
-      id='main' tag='section'
-      navigation
-      spaceBetween: 0
-      slidesPerView: 1
-  }; */
-
-  const swiper = new Swiper('.swiper', swiperParams);
 
   for (let i = 0; i < 3; i++){
     slides.push(
