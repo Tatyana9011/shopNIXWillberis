@@ -1,0 +1,46 @@
+.userButtonConteiner {
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+.userButton {
+  margin: 0 5px;
+  border: 10px solid transparent;
+  background: transparent;
+  border-radius: 5px;
+  justify-content: center;
+  display: inline-block;
+}
+
+.userButtonActive {
+  background: #11d6e4;
+  outline: transparent;
+  font-weight: bold;
+}
+.userButton:hover,
+.userButton:focus {
+  background: #11d6e4;
+  outline: transparent;
+  font-weight: bold;
+}
+.userButtonPrev,
+.userButtonNext {
+  margin: 0 5px;
+  border: 10px solid transparent;
+  background: transparent;
+  border-radius: 5px;
+}
+.userButtonPrev:hover,
+.userButtonNext:hover,
+.userButtonPrev:focus,
+.userButtonNext:focus {
+  background: #11d6e4;
+  outline: transparent;
+}
+.userButtonPrev {
+  border-right-color: #19b5fe;
+}
+.userButtonNext {
+  border-left-color: #19b5fe;
+}

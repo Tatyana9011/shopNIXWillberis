@@ -1,0 +1,264 @@
+.button {
+  background: #4592ff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: all 0.3s ease;
+}
+.button:hover,
+.button:focus {
+  background: #0a58ca;
+  text-decoration: none;
+  color: #fff;
+}
+.modal {
+  position: relative;
+  background-color: #e0e0ff;
+  max-width: 50%;
+  max-height: 75%;
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalTitle {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.modalClose {
+  position: absolute;
+  background-color: transparent;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  border: none;
+}
+
+.modalForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modalInput {
+  margin-right: 30px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: none;
+  margin-bottom: 30px;
+}
+
+.cartTable {
+  border-collapse: collapse;
+  min-width: 100%;
+  margin-bottom: 15px;
+}
+
+.cartTable th,
+.cartTable td {
+  text-align: left;
+  border: 1px solid black;
+}
+
+.cartBuy {
+  background-color: #4592ff;
+  border-color: #4592ff;
+  display: block;
+  margin-left: auto;
+  height: 40px;
+}
+
+.clearTable {
+  position: relative;
+  display: block;
+  background-color: #3b38f0;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.mw160 {
+  max-width: 160px;
+}
+
+.colPrice {
+  width: 100px;
+}
+
+.colMinus {
+  width: 15px;
+}
+
+.colQty {
+  width: 15px;
+}
+
+.colPlus {
+  width: 15px;
+}
+
+.colTotalPrice {
+  width: 120px;
+}
+
+.colDelete {
+  width: 5px;
+}
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.buttonIcon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.buttonIcon,
+.buttonPrice,
+.buttonText,
+.cartCount {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  z-index: 300;
+  border: 2px solid #e9bb26;
+  padding: 0 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cart:hover,
+.cart:focus {
+  background-color: rgba(46, 45, 45, 0.6);
+}
+.goodCart {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: rgb(116, 114, 114);
+  width: auto;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  left: 30px;
+  top: 2%;
+}
+.goodCart:hover,
+.goodCart:focus {
+  background: transparent;
+  color: black;
+}
+
+.goodCart img {
+  width: 25px;
+  filter: invert(0.5);
+}
+.goodCart:hover img,
+.goodCart:focus img {
+  width: 25px;
+  filter: invert(0.8);
+}
+.increment {
+  display: none;
+}
+.goodCart .increment {
+  position: relative;
+  display: flex;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.increment::before {
+  content: "";
+  position: absolute;
+  background: rgb(116, 114, 114);
+  color: rgb(36, 34, 34);
+  width: 15px;
+  height: 3px;
+}
+.increment:hover:before,
+.increment:focus:before {
+  background: rgb(36, 34, 34);
+}
+.increment:hover,
+.increment:focus {
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .cart {
+    bottom: 80px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    z-index: 300;
+    padding: 0 2px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1300px) {
+  .modal {
+    max-width: 75%;
+  }
+}
+@media (max-width: 992px) {
+  .modal {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .modal {
+    max-width: 100%;
+  }
+}

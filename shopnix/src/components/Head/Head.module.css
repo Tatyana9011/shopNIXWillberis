@@ -1,0 +1,120 @@
+.header {
+  padding: 15px 0;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.navigationLink {
+  text-decoration: none;
+  color: #939699;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+.navigationLink:hover {
+  text-decoration: none;
+  color: #696b6d;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.button {
+  background: #4592ff;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: all 0.3s ease;
+}
+.active {
+  text-decoration: underline;
+  text-decoration: cornflowerblue;
+}
+.button:hover {
+  background: #0a58ca;
+  text-decoration: none;
+  color: #fff;
+  outline: transparent;
+}
+.button:focus {
+  background: #4592ff;
+  text-decoration: none;
+  color: #fff;
+  outline: transparent;
+}
+.buttonIcon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.buttonIcon,
+.buttonPrice,
+.buttonText,
+.cartCount {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.buttonExit {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+.logoImage {
+  transition: all 0.3s ease;
+}
+.logoImage:hover {
+  filter: invert(0.5);
+}
+.cartCount {
+  margin-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .cart {
+    top: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    z-index: 300;
+    padding: 0 2px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 800px) {
+  .buttonText {
+    display: none;
+  }
+  .buttonText.cartCount {
+    display: inline;
+  }
+}
+@media (max-width: 1200px) {
+  .buttonIcon,
+  .buttonPrice,
+  .buttonText,
+  .cartCount {
+    padding: 0 !important;
+  }
+}

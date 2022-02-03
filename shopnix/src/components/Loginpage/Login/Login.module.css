@@ -1,0 +1,74 @@
+.NavLink {
+  background: #4592ff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  color: #fff !important;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 4px;
+  transition: all 0.3s ease-in;
+}
+.NavLink:hover {
+  background: #0a58ca !important;
+  text-decoration: none;
+  color: #fff;
+}
+.tweetFormTitle {
+  font-size: 18px;
+  color: rgb(15, 20, 25);
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.tweetFormSubtitle {
+  font-size: 16px;
+  color: rgb(127, 127, 127);
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.tweetFormError {
+  font-size: 16px;
+  color: rgb(255, 0, 0);
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.tweetFormSubtitle a {
+  font-size: 16px;
+  color: rgb(15, 20, 25);
+  /*text-decoration: underline;*/
+}
+.Delete {
+  background: #7c7c7c;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  color: #fff !important;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 4px;
+  transition: all 0.3s ease-in;
+}
+.Delete:hover {
+  background: #292a2b !important;
+  text-decoration: none;
+  color: #fff;
+}

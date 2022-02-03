@@ -1,0 +1,82 @@
+.button {
+  background: #4592ff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.buttonIcon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.buttonIcon,
+.buttonPrice,
+.buttonText {
+  margin-right: 10px;
+}
+
+.footer {
+  background: #8f79d4;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+.footerMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footerMenuItem:not(:last-child) {
+  margin-right: 40px;
+}
+.footerMenuLink {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footerText {
+  color: #e7d9ff;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Lato", sans-serif;
+}
+.socialLink {
+  text-decoration: none;
+  margin-left: 15px;
+}
+.socialLink:hover {
+  filter: invert(0.2);
+}
+.footerLine {
+  color: #fff;
+  opacity: 0.5;
+  size: 1px;
+  transition: all 0.3s ease;
+}
+
+.footerMenuLink:hover {
+  color: rgb(206, 204, 204);
+  size: 2px;
+}
+
+.paymentLogo {
+  vertical-align: middle;
+  margin-right: 25px;
+  transition: all 0.3s ease;
+}
+
+.paymentLogo:hover {
+  filter: invert(0.9);
+}

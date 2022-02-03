@@ -1,0 +1,600 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "email",
+      "pass": "asd",
+      "rememberMe": true
+    },
+    {
+      "id": "2",
+      "name": "kjsdbhfw",
+      "pass": "1235",
+      "rememberMe": true
+    },
+    {
+      "email": "email5",
+      "login": "true",
+      "pass": "pass5",
+      "id": "pvL-vDX"
+    },
+    {
+      "email": "email5",
+      "login": "true",
+      "pass": "pass5",
+      "id": "u4daVIx"
+    },
+    {
+      "email": "email5",
+      "login": "login5",
+      "pass": "pass5",
+      "id": "vNCYykN"
+    },
+    {
+      "email": "email5",
+      "login": "login5",
+      "pass": "pass5",
+      "id": "naMVZSC"
+    },
+    {
+      "email": "email5",
+      "login": "login5",
+      "pass": "pass5",
+      "id": "qBZqUL3"
+    },
+    {
+      "email": "email5",
+      "login": "login5",
+      "pass": "pass5",
+      "id": "5qi-95S"
+    },
+    {
+      "email": "email5",
+      "login": "login5",
+      "pass": "pass5",
+      "id": "X9LRHvW"
+    },
+    {
+      "email": "email5",
+      "login": "login5",
+      "pass": "pass5",
+      "id": "9P6AsHE"
+    },
+    {
+      "email": "email5",
+      "login": "login5",
+      "pass": "pass5",
+      "id": "fJzxK0A"
+    },
+    {
+      "email": "email1",
+      "login": "login1",
+      "pass": "pass1",
+      "id": "0SvSx4B"
+    },
+    {
+      "email": "email1",
+      "login": "login1",
+      "pass": "pass1",
+      "id": "YLykX7J"
+    },
+    {
+      "email": "email1",
+      "login": "login1",
+      "pass": "pass1",
+      "id": "pTknzON"
+    },
+    {
+      "email": "tanya.kamyshnikova@gmail.com",
+      "login": "asd",
+      "pass": "qwerty",
+      "id": "5Sg6-FL"
+    },
+    {
+      "email": "ghmgj@kcf.com",
+      "login": "adminfsh",
+      "pass": "adminfsh",
+      "id": "DsI-rLC"
+    },
+    {
+      "email": "tanya.kamyshnikova@gmail.com",
+      "login": "cvnzgdn",
+      "pass": "zdfhd",
+      "id": "yh-WeJ9"
+    },
+    {
+      "email": "tanya.kamyshnikova@gmail.com",
+      "login": "adminfsh",
+      "pass": "dsgbdrf",
+      "id": "JyBsYS-"
+    }
+  ],
+  "cartUsers": [
+    {
+      "idGoods": "001",
+      "emailUsers": "tanya.kamyshnikova@gmail.com"
+    }
+  ],
+  "goods": [
+    {
+      "id": "001",
+      "img": "img/image-122.jpg",
+      "name": "Striped Long Sleeve Shirt",
+      "label": "new",
+      "description": "Red/Sky Blue",
+      "price": "119",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "002",
+      "img": "img/201mt210e.jpg",
+      "name": "Poplin Top With Sleeve Bow",
+      "label": "Bestseller",
+      "description": "Bright Blue",
+      "price": "129",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "003",
+      "img": "img/61SVZdHi1SL.jpg",
+      "name": "TOMS Women's Alpargata Loafer",
+      "label": "Bestseller",
+      "description": "Red",
+      "price": "219",
+      "category": "Shoes",
+      "gender": "Womens"
+    },
+    {
+      "id": "004",
+      "img": "img/thR2gxLUL1152.jpg",
+      "name": "Text T-Shirt",
+      "label": "Bestseller",
+      "description": "Pink and dogs",
+      "price": "119",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "005",
+      "img": "img/81ecpN8bKL.jpg",
+      "name": "Sweater Choker Neck",
+      "label": "Bestseller",
+      "description": "Dustyolive",
+      "price": "319",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "006",
+      "img": "img/61xZxTBffZL.jpg",
+      "name": "SJP by Sarah Jessica Parker",
+      "label": "",
+      "description": "Black/Nude Patent",
+      "price": "242",
+      "category": "Shoes",
+      "gender": "Womens"
+    },
+    {
+      "id": "007",
+      "img": "img/71AogkKMguL.jpg",
+      "name": "ECCO Biom Aex Luxe Hydromax Trainer",
+      "label": "",
+      "description": "Black",
+      "price": "199",
+      "category": "Shoes",
+      "gender": "Mens"
+    },
+    {
+      "id": "008",
+      "img": "img/71wbXtpEwQL.jpg",
+      "name": "Nike Air Max Torch 3 Men's Running Shoes",
+      "label": "",
+      "description": "Black/White",
+      "price": "153",
+      "category": "Shoes",
+      "gender": "Mens"
+    },
+    {
+      "id": "009",
+      "img": "img/71Ka10xx6.jpg",
+      "name": "Printed Shirt with a Bow",
+      "label": "",
+      "description": "Pink/Sky Blue/Yellow",
+      "price": "119",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "010",
+      "img": "img/image-121.jpg",
+      "name": "Text T-Shirt",
+      "label": "New",
+      "description": "White",
+      "price": "59",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "011",
+      "img": "img/image-120.jpg",
+      "name": "Faded Beach Trousers",
+      "label": "New",
+      "description": "Ochre",
+      "price": "139",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "012",
+      "img": "img/image-119.jpg",
+      "name": "Embroidered Hoodie",
+      "label": "New",
+      "description": "Lilac",
+      "price": "89",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "013",
+      "img": "img/A1GFd9I31.jpg",
+      "name": "Bugatchi Men's Long Sleeve Collar Shirt",
+      "label": "New",
+      "description": "Periwinkle",
+      "price": "109",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "014",
+      "img": "img/819MP6k4E6L.jpg",
+      "name": "SITKA Gear Men's Hunting Windproof Optifade",
+      "label": "",
+      "description": "Elevated Ii",
+      "price": "299",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "015",
+      "img": "img/713S476iemL.jpg",
+      "name": "Derek Rose Men's Short Sleeve T-Shirt",
+      "label": "",
+      "description": "Charcoal",
+      "price": "119",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "016",
+      "img": "img/61BjZJm0AaL.jpg",
+      "name": "LEKODE Men Beach Shorts Drawstring  Swim Pants",
+      "label": "",
+      "description": "Red-Cola",
+      "price": "19",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "017",
+      "img": "img/91DXANwJ63L.jpg",
+      "name": "Anna by Anuschka Women's  Large Hobo Handbag",
+      "label": "Bestseller",
+      "description": "Tuscan Tiles",
+      "price": "199",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "018",
+      "img": "img/61vHzipbVL.jpg",
+      "name": "Prada Trick Pelle Saffiano Dog",
+      "label": "",
+      "description": "White / White Chihuahua Gold Keychain",
+      "price": "450",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "019",
+      "img": "img/81zhsxFeEJL.jpg",
+      "name": "Willberries Essentials  Muffs",
+      "label": "Bestseller",
+      "description": "Leopard",
+      "price": "19",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "020",
+      "img": "img/61-25976rtL.jpg",
+      "name": "Purse Organizer Insert",
+      "label": "",
+      "description": "Black / Felt",
+      "price": "29",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "021",
+      "img": "img/51xrpCz0wuL.jpg",
+      "name": "Spyder Mens Pinnacle GTX Ski Glove",
+      "label": "",
+      "description": "Black",
+      "price": "239",
+      "category": "Accessories",
+      "gender": "Mens"
+    },
+    {
+      "id": "022",
+      "img": "img/51EeCDi3G9L.jpg",
+      "name": "Salvatore Ferragamo Buckle",
+      "label": "",
+      "description": "Black/Brown Reversible Belt",
+      "price": "417",
+      "category": "Accessories",
+      "gender": "Mens"
+    },
+    {
+      "id": "023",
+      "img": "img/61qMUpjOx7L.jpg",
+      "name": "American Hat Makers Sierra Cowboy Hat",
+      "label": "new",
+      "description": "Handcrafted, Genuine Leather",
+      "price": "217",
+      "category": "Accessories",
+      "gender": "Mens"
+    },
+    {
+      "id": "024",
+      "img": "img/41heUmYaMGL.jpg",
+      "name": "Oakley Men's Flak 2.0 XL OO9188 Sunglasses Bundle",
+      "label": "",
+      "description": "Matte Black/Prizm Deep Water Polarized",
+      "price": "206",
+      "category": "Accessories",
+      "gender": "Mens"
+    },
+    {
+      "id": "025",
+      "img": "img/image-122.jpg",
+      "name": "Striped Long Sleeve Shirt",
+      "label": "New",
+      "description": "Red/Sky Blue Black/Prizm",
+      "price": "200",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "026",
+      "img": "img/201mt210e.jpg",
+      "name": "Poplin Top With Sleeve Bow",
+      "label": "Bestseller",
+      "description": "Bright Blue",
+      "price": "250",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "027",
+      "img": "img/61SVZdHi1SL.jpg",
+      "name": "TOMS Women's Alpargata Loafer",
+      "label": "Bestseller",
+      "description": "Red",
+      "price": "319",
+      "category": "Shoes",
+      "gender": "Womens"
+    },
+    {
+      "id": "028",
+      "img": "img/thR2gxLUL1152.jpg",
+      "name": "Text T-Shirt",
+      "label": "Bestseller",
+      "description": "Pink and dogs",
+      "price": "259",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "029",
+      "img": "img/81ecpN8bKL.jpg",
+      "name": "Sweater Choker Neck",
+      "label": "Bestseller",
+      "description": "Dustyolive",
+      "price": "219",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "030",
+      "img": "img/61xZxTBffZL.jpg",
+      "name": "SJP by Sarah Jessica Parker",
+      "label": "New",
+      "description": "Black/Nude Patent",
+      "price": "252",
+      "category": "Shoes",
+      "gender": "Womens"
+    },
+    {
+      "id": "031",
+      "img": "img/71AogkKMguL.jpg",
+      "name": "ECCO Biom Aex Luxe Hydromax Trainer",
+      "label": "",
+      "description": "Black",
+      "price": "299",
+      "category": "Shoes",
+      "gender": "Mens"
+    },
+    {
+      "id": "032",
+      "img": "img/71wbXtpEwQL.jpg",
+      "name": "Nike Air Max Torch 3 Men's Running Shoes",
+      "label": "",
+      "description": "Black/White",
+      "price": "133",
+      "category": "Shoes",
+      "gender": "Mens"
+    },
+    {
+      "id": "033",
+      "img": "img/71Ka10xx6.jpg",
+      "name": "Printed Shirt with a Bow",
+      "label": "New",
+      "description": "Pink/Sky Blue/Yellow",
+      "price": "219",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "034",
+      "img": "img/image-121.jpg",
+      "name": "Text T-Shirt",
+      "label": "New",
+      "description": "White",
+      "price": "159",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "035",
+      "img": "img/image-120.jpg",
+      "name": "Faded Beach Trousers",
+      "label": "New",
+      "description": "Ochre",
+      "price": "259",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "036",
+      "img": "img/image-119.jpg",
+      "name": "Embroidered Hoodie",
+      "label": "New",
+      "description": "Lilac",
+      "price": "189",
+      "category": "Clothing",
+      "gender": "Womens"
+    },
+    {
+      "id": "037",
+      "img": "img/A1GFd9I31.jpg",
+      "name": "Bugatchi Men's Long Sleeve Collar Shirt",
+      "label": "New",
+      "description": "Periwinkle",
+      "price": "209",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "038",
+      "img": "img/819MP6k4E6L.jpg",
+      "name": "SITKA Gear Men's Hunting Windproof Optifade",
+      "label": "",
+      "description": "Elevated Ii",
+      "price": "289",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "039",
+      "img": "img/713S476iemL.jpg",
+      "name": "Derek Rose Men's Short Sleeve T-Shirt",
+      "label": "",
+      "description": "Charcoal",
+      "price": "219",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "040",
+      "img": "img/61BjZJm0AaL.jpg",
+      "name": "LEKODE Men Beach Shorts Drawstring  Swim Pants",
+      "label": "",
+      "description": "Red-Cola",
+      "price": "150",
+      "category": "Clothing",
+      "gender": "Mens"
+    },
+    {
+      "id": "041",
+      "img": "img/91DXANwJ63L.jpg",
+      "name": "Anna by Anuschka Women's  Large Hobo Handbag",
+      "label": "Bestseller",
+      "description": "Tuscan Tiles",
+      "price": "159",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "042",
+      "img": "img/61vHzipbVL.jpg",
+      "name": "Prada Trick Pelle Saffiano Dog",
+      "label": "",
+      "description": "White / White Chihuahua Gold Keychain",
+      "price": "350",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "043",
+      "img": "img/81zhsxFeEJL.jpg",
+      "name": "Willberries Essentials  Muffs",
+      "label": "Bestseller",
+      "description": "Leopard",
+      "price": "139",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "044",
+      "img": "img/61-25976rtL.jpg",
+      "name": "Purse Organizer Insert",
+      "label": "",
+      "description": "Black / Felt",
+      "price": "59",
+      "category": "Accessories",
+      "gender": "Womens"
+    },
+    {
+      "id": "045",
+      "img": "img/51xrpCz0wuL.jpg",
+      "name": "Spyder Mens Pinnacle GTX Ski Glove",
+      "label": "",
+      "description": "Black",
+      "price": "139",
+      "category": "Accessories",
+      "gender": "Mens"
+    },
+    {
+      "id": "046",
+      "img": "img/51EeCDi3G9L.jpg",
+      "name": "Salvatore Ferragamo Buckle",
+      "label": "",
+      "description": "Black/Brown Reversible Belt",
+      "price": "317",
+      "category": "Accessories",
+      "gender": "Mens"
+    },
+    {
+      "id": "047",
+      "img": "img/61qMUpjOx7L.jpg",
+      "name": "American Hat Makers Sierra Cowboy Hat",
+      "label": "new",
+      "description": "Handcrafted, Genuine Leather",
+      "price": "197",
+      "category": "Accessories",
+      "gender": "Mens"
+    },
+    {
+      "id": "048",
+      "img": "img/41heUmYaMGL.jpg",
+      "name": "Oakley Men's Flak 2.0 XL OO9188 Sunglasses Bundle",
+      "label": "",
+      "description": "Matte Black/Prizm Deep Water Polarized",
+      "price": "250",
+      "category": "Accessories",
+      "gender": "Mens"
+    }
+  ]
+}
